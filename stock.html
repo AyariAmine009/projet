@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Stock — BVMT Assistant</title>
+
+<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="./css/stock.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="nav">
+  <div class="container nav-inner">
+
+    <div class="brand">
+      <span class="brand-badge"></span>
+      BVMT Assistant
+    </div>
+
+    <div class="nav-links">
+      <a href="./index.html">Home</a>
+      <a href="./dashboard.html">Dashboard</a>
+      <a class="active" href="./stock.html">Stock</a>
+      <a href="./alerts.html">Alerts</a>
+      <a href="./profile.html">Profile</a>
+      <a href="./portfolio.html">Portfolio</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- MAIN -->
+<main class="container">
+
+<div class="header">
+  <div>
+    <h1>Stock Intelligence</h1>
+    <div class="sub">Predictions, sentiment, indicators and explanations</div>
+  </div>
+</div>
+
+<!-- ENTERPRISE LIST -->
+<div class="card spacing-xl">
+
+<h3 class="stock-section-title">Tunisian Companies</h3>
+
+<select id="companySelect" class="stock-select">
+</select>
+
+</div>
+
+<!-- GRID -->
+<div class="stock-grid">
+
+<!-- PREDICTIONS -->
+<div class="card spacing-xl">
+
+<div class="stock-card-header">
+  <h3>Predictions</h3>
+  <span class="tooltip">
+    ?
+    <span class="tooltip-text" id="predictionReason">
+      Explanation will come from API
+    </span>
+  </span>
+</div>
+
+<div class="stock-predictions">
+
+<div>
+<div class="mini">1 Day Prediction</div>
+<div id="pred1d" class="stock-big-value">--</div>
+</div>
+
+<div>
+<div class="mini">5 Day Prediction</div>
+<div id="pred5d" class="stock-big-value">--</div>
+</div>
+
+</div>
+
+</div>
+
+<!-- RECOMMENDATION -->
+<div class="card spacing-xl">
+
+<div class="stock-card-header">
+  <h3>Recommendation</h3>
+  <span class="tooltip">
+    ?
+    <span class="tooltip-text" id="recommendReason">
+      Explanation will come from API
+    </span>
+  </span>
+</div>
+
+<div id="recommendation" class="stock-big-value">--</div>
+
+</div>
+
+<!-- SENTIMENT -->
+<div class="card spacing-xl">
+
+<div class="stock-card-header">
+  <h3>Market Sentiment</h3>
+  <span class="tooltip">
+    ?
+    <span class="tooltip-text" id="sentimentReason">
+      Explanation will come from API
+    </span>
+  </span>
+</div>
+
+<div id="sentimentValue" class="stock-big-value">--</div>
+
+</div>
+
+<!-- INDICATORS -->
+<div class="card spacing-xl">
+
+<div class="stock-card-header">
+  <h3>Indicators</h3>
+  <span class="tooltip">
+    ?
+    <span class="tooltip-text" id="indicatorReason">
+      Explanation will come from API
+    </span>
+  </span>
+</div>
+
+<div class="indicator-grid">
+
+<div class="indicator-box">
+RSI
+<div id="rsiVal">--</div>
+</div>
+
+<div class="indicator-box">
+MACD
+<div id="macdVal">--</div>
+</div>
+
+<div class="indicator-box">
+Signal
+<div id="signalVal">--</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+
+<script src="./js/stock.js"></script>
+
+</body>
+</html>
