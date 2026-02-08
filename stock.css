@@ -1,0 +1,90 @@
+.spacing-xl{
+  margin-top: 24px;
+  padding: 22px;
+}
+
+.stock-grid{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.stock-section-title{
+  margin-bottom: 14px;
+}
+
+.stock-select{
+  width: 320px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #0B0E11;
+  border:1px solid var(--border);
+  color:white;
+}
+
+.stock-card-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom: 18px;
+}
+
+.stock-big-value{
+  font-size: 32px;
+  font-weight: 800;
+  margin-top: 6px;
+}
+
+.stock-predictions{
+  display:flex;
+  gap: 60px;
+}
+
+/* TOOLTIP */
+
+.tooltip{
+  position: relative;
+  cursor: help;
+  background: #1E2329;
+  border-radius: 50%;
+  width:22px;
+  height:22px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.tooltip-text{
+  position:absolute;
+  bottom:140%;
+  left:50%;
+  transform: translateX(-50%);
+  background:#161A1E;
+  padding:10px;
+  border-radius:8px;
+  border:1px solid var(--border);
+  width:220px;
+  font-size:12px;
+  opacity:0;
+  pointer-events:none;
+  transition:0.2s;
+}
+
+.tooltip:hover .tooltip-text{
+  opacity:1;
+}
+
+/* INDICATORS */
+
+.indicator-grid{
+  display:flex;
+  gap:20px;
+}
+
+.indicator-box{
+  border:1px solid var(--border);
+  padding:16px;
+  border-radius:12px;
+  width:120px;
+}
